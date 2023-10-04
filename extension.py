@@ -48,7 +48,7 @@ class CurrencyConverter:
         try:
             amount = int(qty)
         except ValueError:
-            raise ConversionException(f'Количество {cur_from} не является допустимым значением.')
+            raise ConversionException(f'Количество {qty} не является допустимым значением.')
         if cur_to_code == cur_from_code:
             raise ConversionException(f'Нельзя конвертировать валюту {cur_from_code} в саму себя')
 
